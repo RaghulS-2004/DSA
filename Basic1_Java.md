@@ -139,6 +139,61 @@ public class Main
 ![image](https://github.com/user-attachments/assets/c0f626bb-7566-4554-86c3-014f148ee249)
 
 
+## Problem-3:
+ Write a program using switch case which takes a value and prints the respective Size.
+If size is 29 then its small
+
+If size is 30 then its Medium
+
+If size is 38 then its Large
+
+If size is 42 then its XLarge
+
+If size is not any of the above then Invalid.
+
+
+
+Input: 29
+
+Expected Output: 
+
+Small
+## PROGRAM:(Main.java) 
+```
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner input=new Scanner(System.in);
+        int size=input.nextInt();
+        switch (size)
+        {
+            case 29:
+                System.out.println("Small");
+                break;
+            case 30:
+                System.out.println("Medium");
+                break;
+            case 38:
+                System.out.println("Large");
+                break;
+            case 42:
+                System.out.println("XLarge");
+                break;
+            default:
+                System.out.println("Invalid");
+        }
+        
+    }
+}
+```
+## OUTPUT
+![image](https://github.com/user-attachments/assets/78410d7b-a425-4236-8a02-34911982b5dc)
+![image](https://github.com/user-attachments/assets/e2b78a1e-1d91-4575-8f8b-e8b597273e1c)
+![image](https://github.com/user-attachments/assets/3c90f133-636c-419d-bc86-0329941db656)
+![image](https://github.com/user-attachments/assets/9dc2cecc-fdef-4127-9302-857a391ddeff)
+![image](https://github.com/user-attachments/assets/f32a7856-822b-4cb5-a33c-bb00b8c11e2d)
 
 
 
