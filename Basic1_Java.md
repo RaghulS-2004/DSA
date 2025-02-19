@@ -1,114 +1,39 @@
-## Ex.No:12 Design an application that draws basic graphical primitives on the screen.
-## AIM:
-To create and design an android application that draws basic graphical primitives on the screen using Android Studio.
+## BASIC - 1 (JAVA)
+## Problem-1:
+Write a program that takes an integer, then a string, then a char from the user and prints them in the screen.
 
-## EQUIPMENTS REQUIRED:
-Android Studio(Latest Version)
+Input:  2 Name y
 
-## ALGORITHM:
-Step 1: Open Android Stdio and then click on File -> New -> New project.
+Expected Output:
 
-Step 2: Then type the Application name as “graphical″ and click Next.
+2
 
-Step 3: Then select the Minimum SDK as shown below and click Next.
+Name
 
-Step 4: Then select the Empty Activity and click Next. Finally click Finish.
+y
 
-Step 5: Design layout in activity_main.xml.
-
-Step 6: Draw basic object details give in MainActivity file.
-
-Step 7: Save and run the application.
-
-## PROGRAM:
-/*
+## PROGRAM:(Main.java)
 ```
-Program to create and design an android application that draws basic graphical primitives on the screen.
-Developed by:RAGHUL S
-Registeration Number :212222040128
-```
-*/
-## activity_main.xml
-```
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_height="match_parent"
-    android:layout_width="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/ImageView"/>
-</RelativeLayout>
-```
-## MainActivity.java
-```
-package com.example.exp12;
-
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
-import android.graphics.Bitmap;
-import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
-import android.graphics.drawable.BitmapDrawable;
-import android.os.Bundle;
-import android.widget.ImageView;
-public class MainActivity extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Bitmap bg = Bitmap.createBitmap(720, 1280,
-                Bitmap.Config.ARGB_8888);
-        ImageView i = (ImageView) findViewById(R.id.ImageView);
-        i.setBackgroundDrawable(new BitmapDrawable(bg));
-        Canvas canvas = new Canvas(bg);
-        Paint paint = new Paint();
-        paint.setColor(Color.RED);
-        paint.setTextSize(50);
-        canvas.drawText("Rectangle", 420, 150, paint);
-        canvas.drawRect(400, 200, 650, 700, paint);
-        canvas.drawText("Circle", 120, 150, paint);
-        canvas.drawCircle(200, 350, 150, paint);
-        canvas.drawText("Square", 120, 800, paint);
-        canvas.drawRect(50, 850, 350, 1150, paint);
-        canvas.drawText("Line", 480, 800, paint);
-        canvas.drawLine(520, 850, 520, 1150, paint);
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int num;
+        String name;
+        char ch;
+        Scanner input=new Scanner(System.in);
+        num=input.nextInt();
+        name=input.next();
+        ch=input.next().charAt(0);
+        System.out.println(num);
+        System.out.println(name);
+        System.out.println(ch);
 
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ```
+
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/c9d58f12-d25a-4f6d-a62a-9ab1b785e555)
 
-![Screenshot 2024-10-24 112810](https://github.com/user-attachments/assets/e546292b-9230-48f1-908f-3c7dda1d1064)
-
-## RESULT
-Thus a Simple Android Application to create and design an android application that draws basic graphical primitives on the screen using Android Studio is developed and executed successfully.
