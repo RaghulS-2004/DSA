@@ -76,4 +76,71 @@ public class Main
 ## OUTPUT
 ![image](https://github.com/user-attachments/assets/576e853a-6966-4b60-b083-2af1113ee8d3)
 
+## Problem-3:
+Given mark of student, Print the Grade
+
+Grade A if mark is greater than or equal to 90
+
+Grade B if mark is greater than or equal to 80
+
+Grade C if mark if greater than or equal to 60
+
+Grade D if mark if greaer than or equal to 35
+
+Fail if mark is lesser than 35
+
+
+Input: 95
+
+Expected Output:
+
+Grade A
+
+Explanation: Here 95 is greater than or equal to 90 so its Grade A
+
+## PROGRAM:(Main.java)
+```
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner input=new Scanner(System.in);
+        int mark=input.nextInt();
+        if (mark>=90)
+        {
+            System.out.println("Grade A");
+        }
+        else if (mark>=80)
+        {
+            System.out.println("Grade B");
+        }
+        else if (mark>=60)
+        {
+            System.out.println("Grade C");
+        }
+        else if (mark>=35)
+        {
+            System.out.println("Grade D");
+        }
+        else
+        {
+            System.out.println("Fail");
+        }
+    }
+}
+```
+
+## OUTPUT
+![image](https://github.com/user-attachments/assets/1cd5671d-053b-4033-a3e2-414defcc1919)
+![image](https://github.com/user-attachments/assets/8eae3224-d269-4031-9e66-e219ceed3cc9)
+![image](https://github.com/user-attachments/assets/db200b33-1f87-4d27-8d92-afe48e42f44c)
+![image](https://github.com/user-attachments/assets/5c3ff0b2-7210-4b34-94ec-29b3c71b2c3b)
+![image](https://github.com/user-attachments/assets/c0f626bb-7566-4554-86c3-014f148ee249)
+
+
+
+
+
+
 
