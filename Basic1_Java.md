@@ -139,7 +139,7 @@ public class Main
 ![image](https://github.com/user-attachments/assets/c0f626bb-7566-4554-86c3-014f148ee249)
 
 
-## Problem-3:
+## Problem-4:
  Write a program using switch case which takes a value and prints the respective Size.
 If size is 29 then its small
 
