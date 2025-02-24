@@ -1,4 +1,4 @@
-## BASIC - 1 (JAVA)
+
 ## Problem-1:
 Write a program to print the below pattern:
 Input: 4
