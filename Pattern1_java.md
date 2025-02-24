@@ -4,10 +4,12 @@ Write a program to print the below pattern:
 Input: 4
 
 Output:
+```
 ****
 ****
 ****
 ****
+```
 
 ## PROGRAM:(Main.java)
 ```
